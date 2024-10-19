@@ -26,6 +26,10 @@ async function main() {
     case "check-db-connection":
       await checkConnection();
       break;
+    
+    case "reset-db":
+      await resetDatabase();
+      break;
 
     case "bulk-insert":
       await bulkInsert(Model);
